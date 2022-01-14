@@ -13,5 +13,3 @@ npm run serve
 ```
 npm run build
 ```
-### Hosting
-Hosted here: [package-finder](https://package-finder.web.app/ "package-finder")
