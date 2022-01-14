@@ -1,0 +1,163 @@
+@import "flying-gradient.scss";
+
+body {
+  font-family: "Varela Round";
+}
+
+.form-control {
+  margin-top: 20px;
+}
+
+.table {
+  height: 667px;
+
+  > :not(caption) > * > * {
+    padding: 2px;
+    border: none;
+    vertical-align: middle;
+  }
+
+  tr.table-light {
+    cursor: pointer;
+    margin-bottom: 3px !important;
+    overflow: hidden;
+  }
+
+  thead {
+    tr {
+      text-align: center;
+    }
+
+    th {
+      padding: 0 0 15px 0 !important;
+      color: white;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px #0000005e;
+    }
+  }
+
+  > :not(caption) > * > * {
+    border: none;
+    margin-top: 2px;
+
+    &:first-child {
+      border-top-left-radius: 5px !important;
+      border-bottom-left-radius: 5px !important;
+      overflow: hidden;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+      overflow: hidden;
+    }
+  }
+
+  .table-line {
+    text-align: center;
+
+    .column {
+      &.index-1 {
+        width: 5%
+      }
+
+      &__owner-avatar {
+        width: 70px;
+        border-radius: 5px;
+      }
+
+      &.index-2 {
+        width: 25%
+      }
+
+      &__name {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 70px;
+        @media(max-width: 768px) {
+          max-width: 62px;
+        }
+      }
+
+      &.index-3 {
+        width: 25%
+      }
+
+      &__description {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 62px;
+        @media(max-width: 768px) {
+          max-width: 120px;
+        }
+      }
+
+      &.index-4 {
+        width: 25%
+      }
+
+      &__license {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 70px;
+        @media(max-width: 768px) {
+          max-width: 62px;
+        }
+      }
+
+      &.index-5 {
+        width: 25%
+      }
+
+      &__version {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 62px;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 135px;
+
+  .pagination-list {
+    list-style: none;
+  }
+}
+
+.page-item.active .page-link {
+  background-color: #0a4275;
+}
+
+.footer {
+  z-index: 9;
+}
+
+.package-modal {
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+}
+
+.separator {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    right: 0;
+    background: white;
+    top: -12px;
+    padding-left: 10px;
+  }
+}
