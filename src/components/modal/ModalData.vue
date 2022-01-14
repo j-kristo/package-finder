@@ -16,11 +16,11 @@
           <div class="mx-2 fw-bold">{{ package.owner.name }}</div>
         </div>
         <div class="col d-flex flex-column align-items-end">
-          <div><span class="fw-bold">version</span>{{ package.version }}</div>
-          <div><span class="fw-bold">license</span>{{ package.license }}</div>
+          <div><span class="fw-bold">version: </span>{{ package.version }}</div>
+          <div><span class="fw-bold">license: </span>{{ package.license }}</div>
           <div>
             last month downloads :
-            <span class="digit text-danger">
+            <span class="digit text-danger fw-bold">
               {{ package.humanDownloadsLast30Days }}
             </span>
           </div>
