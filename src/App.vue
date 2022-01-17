@@ -30,6 +30,7 @@
   />
 
   <Cube
+      class="cube"
       v-if="!packages.list.length"
   />
 
@@ -58,7 +59,6 @@ import {
   MDBModalFooter,
   MDBBtn,
 } from 'mdb-vue-ui-kit';
-import {ref} from 'vue';
 
 export default {
   name: 'App',
@@ -79,7 +79,6 @@ export default {
     MDBBtn
   },
   setup() {
-    const staticBackdrop = ref(false)
 
     function setFocus() {
       const autofocusInput = document.getElementById('autofocusInput')

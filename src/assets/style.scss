@@ -1,11 +1,14 @@
 @import "flying-gradient.scss";
 
 body {
-  font-family: "Varela Round";
+  font-family: "Varela Round", sans-serif;
 }
 
 .form-control {
   margin-top: 20px;
+}
+.modal-footer {
+  flex-wrap: nowrap;
 }
 
 .table {
@@ -160,4 +163,8 @@ body {
     top: -12px;
     padding-left: 10px;
   }
+}
+
+.cube {
+  z-index: 999;
 }

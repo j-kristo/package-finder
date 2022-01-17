@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="welcome-message">
-      <h3 class="demo"></h3>
+      <h5 class="demo"></h5>
     </div>
     <div class="welcome">
       <h1>{{ this.welcomeMessage }}</h1>
@@ -46,11 +46,11 @@ export default {
 
 .welcome-message {
   color: #fff;
-
   position: absolute;
   top: 25%;
   left: 50%;
   z-index: 150;
+  white-space: nowrap;
   transform: translate(-50%, -50%);
 }
 
@@ -65,6 +65,7 @@ export default {
   transform: translate(-50%, -50%);
   text-shadow: 9px 11px 6px #0000007d;
   transition: .3s ease-out;
+  white-space: nowrap;
 
   &:hover {
     color: #ff1e5c;
@@ -150,7 +151,7 @@ $cube-transforms: (
     background: #0e4f8a;
     border: 1px solid #fb5d91;
     opacity: 0.85;
-    box-shadow: 0px 3px 16px rgba(210, 33, 42, 0.4);
+    box-shadow: 0 3px 16px rgba(210, 33, 42, 0.4);
   }
 
   @each $selector, $transforms in $cube-transforms {
